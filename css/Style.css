@@ -1,0 +1,168 @@
+/* =======================================================
+   ESTILOS GENERALES
+======================================================= */
+
+body {
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+header {
+    background-color: #222; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centra el texto */
+}
+
+/* =======================================================
+   MENÚ DE NAVEGACIÓN
+======================================================= */
+
+nav {
+    background-color: #444; /* Fondo gris oscuro */
+    padding: 10px; /* Espacio interno */
+    text-align: center; /* Centra enlaces */
+}
+
+nav a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 15px; /* Espacio entre enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+nav a:hover {
+    color: yellow; /* Cambia el color cuando pasa el mouse */
+}
+
+/* =======================================================
+   CONTENEDOR PRINCIPAL
+======================================================= */
+
+.contenedor {
+    display: flex; /* Organiza el contenido en columnas */
+    padding: 20px; /* Espacio interno */
+    gap: 20px; /* Espacio entre sidebar y contenido */
+}
+
+/* =======================================================
+   SIDEBAR
+======================================================= */
+
+.sidebar {
+    width: 25%; /* Ocupa el 25% del ancho */
+    background-color: #ddd; /* Fondo gris */
+    padding: 15px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* =======================================================
+   CONTENIDO
+======================================================= */
+
+.contenido {
+    width: 75%; /* Ocupa el 75% restante */
+    padding: 15px;
+}
+
+/* =======================================================
+   CAJAS
+======================================================= */
+
+.caja {
+    background-color: white; /* Fondo blanco */
+    padding: 15px;
+    margin-bottom: 20px; /* Espacio entre cajas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra */
+}
+
+/* =======================================================
+   IMÁGENES GENERALES
+======================================================= */
+
+.caja img {
+    width: 100%; /* La imagen ocupa todo el ancho */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* =======================================================
+   CARRUSEL
+======================================================= */
+
+.carrusel{
+
+    width:100%;
+
+    max-width:600px;
+
+    margin:20px auto;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Oculta todas las imágenes del carrusel */
+
+.carrusel img{
+
+    display:none;
+
+    width:100%;
+
+    border-radius:10px;
+
+}
+
+/* Muestra únicamente la imagen activa */
+
+.carrusel img.activa{
+
+    display:block;
+
+}
+
+/* =======================================================
+   FOOTER
+======================================================= */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width:768px){
+
+    .contenedor{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        width:100%;
+
+    }
+
+    .contenido{
+
+        width:100%;
+
+    }
+
+}
